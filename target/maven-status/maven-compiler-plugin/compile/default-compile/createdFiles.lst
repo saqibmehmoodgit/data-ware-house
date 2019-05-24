@@ -1,0 +1,12 @@
+com\tera\exceptionHandling\ApiError$ApiSubError.class
+com\tera\repository\SalesOrderHeaderRepo.class
+com\tera\services\SalesOrderHeaderService.class
+com\tera\exceptionHandling\ApiError.class
+com\tera\exceptionHandling\RestExceptionHandler.class
+com\tera\web\SalesOrderHeaderController.class
+com\tera\TeraDataFinalApplication.class
+com\tera\model\SalesOrderHeader.class
+com\tera\services\SalesOrderHeaderServiceImpl.class
+com\tera\exceptionHandling\LowerCaseClassNameResolver.class
+com\tera\exceptionHandling\ApiError$ApiValidationError.class
+com\tera\exceptionHandling\EntityNotFoundException.class

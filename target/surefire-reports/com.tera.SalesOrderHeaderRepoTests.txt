@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.tera.SalesOrderHeaderRepoTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.712 s <<< FAILURE! - in com.tera.SalesOrderHeaderRepoTests
+nativeQueries(com.tera.SalesOrderHeaderRepoTests)  Time elapsed: 0.165 s  <<< ERROR!
+org.springframework.dao.InvalidDataAccessResourceUsageException: could not prepare statement; SQL [select sum(totaldue) from Dice_RDM.SalesOrderHeader group by EXTRACT(year FROM shipdate)]; nested exception is org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.tera.SalesOrderHeaderRepoTests.nativeQueries(SalesOrderHeaderRepoTests.java:71)
+Caused by: org.hibernate.exception.SQLGrammarException: could not prepare statement
+	at com.tera.SalesOrderHeaderRepoTests.nativeQueries(SalesOrderHeaderRepoTests.java:71)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: 
+Schema "DICE_RDM" not found; SQL statement:
+select sum(totaldue) from Dice_RDM.SalesOrderHeader group by EXTRACT(year FROM shipdate) [90079-199]
+	at com.tera.SalesOrderHeaderRepoTests.nativeQueries(SalesOrderHeaderRepoTests.java:71)
+
